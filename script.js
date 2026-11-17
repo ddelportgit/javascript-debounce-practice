@@ -7,7 +7,8 @@ searchInput.addEventListener("input", () => {
   clearTimeout(timer);
 
   if (searchInput.value === "") {
-    output.textContent = "Please eneter a search term.";
+    output.textContent = "Please enter a search term.";
+    return;
   }
 
   timer = setTimeout(() => {
